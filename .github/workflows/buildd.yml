@@ -1,11 +1,9 @@
 
-Take a look to this YAML sample:
-
 name: Build Release APK
 
 on:
   push:
-    branch:
+    branches:
       - 'master'
 
 jobs:
