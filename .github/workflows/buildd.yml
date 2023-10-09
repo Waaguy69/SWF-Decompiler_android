@@ -3,7 +3,7 @@ name: Build Release APK
 
 on:
   push:
-    branches:
+    branch:
       - 'master'
 
 jobs:
@@ -19,4 +19,4 @@ jobs:
     - name: Make Gradle executable
       run: chmod +x gradlew
     - name: Build Release APK
-      run:   assembleRelease
+      run: ./android/gradlew assembleRelease
