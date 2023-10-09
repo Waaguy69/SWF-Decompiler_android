@@ -1,4 +1,6 @@
 
+Take a look to this YAML sample:
+
 name: Build Release APK
 
 on:
@@ -19,4 +21,4 @@ jobs:
     - name: Make Gradle executable
       run: chmod +x gradlew
     - name: Build Release APK
-      run: gradlew assembleRelease
+      run: ./android/gradlew assembleRelease
