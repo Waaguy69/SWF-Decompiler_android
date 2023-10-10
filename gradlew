@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 git add -f gradle/wrapper/gradle-wrapper.jar
+assembleDebug
 ##############################################################################
 ##
 ##  Gradle start up script for UN*X
