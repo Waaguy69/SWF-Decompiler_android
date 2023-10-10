@@ -23,19 +23,4 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Build with Gradle
-      run: ./gradlew build
-    name: Build APK
-        uses: subosito/flutter-action@v1
-        with:
-          flutter-version: "1.17.5"
-      - name: Pub Get Packages
-        run: flutter pub get
-      - name: Build APK
-        run: flutter build apk --split-per-abi --release
-      - name: Build APPBUNDLE
-        run: flutter build appbundle --release
-      - name: Create Github Release
-        uses: ncipollo/release-action@v1
-        with:
-          artifacts: "build/app/outputs/apk/release/*.apk,build/app/outputs/bundle/release/*.aab"
-          token: ${{ secrets.TOKEN }}
+      run: ./gradlew build assembleRelease
