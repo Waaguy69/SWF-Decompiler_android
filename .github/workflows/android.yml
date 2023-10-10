@@ -1,5 +1,4 @@
 name: Android CI
-sdkmanager "platforms;android-25" "build-tools;24.0.2" 
 
 on:
   push:
