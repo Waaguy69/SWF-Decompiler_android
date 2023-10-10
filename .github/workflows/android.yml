@@ -23,4 +23,4 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Build with Gradlew
-      run: cd android && ./gradlew clean && ./gradlew assembleRelease
+      run: SWFDecompiler app && ./gradlew clean && ./gradlew assembleRelease
